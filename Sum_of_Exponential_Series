@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+  int i,accuracy;
+  float x,n=1,d=1,t,a=1;
+  clrscr();
+  printf("Enter the power:");
+  scanf("%f",&x);
+  printf("Enter the number of terms:");
+  scanf("%d",&accuracy);
+  for(i=2;i<=accuracy;i++)
+  {
+    n=n*x;
+    d=d*(i-1);
+    t=n/d;
+    a=a+t;
+  }
+  printf("e^%.0f = %f",x,a);
+
+  return 0;
+}
