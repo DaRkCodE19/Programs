@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+  int i,f=1,s=0;
+  int n=5;
+  clrscr();
+  for(i=1;i<=n;i++)
+  {
+    f=f*i;
+    s=s+f;
+  }
+  printf("Factorial = %d \nSum of Factorial = %d",f,s);
+
+  return 0;
+}
